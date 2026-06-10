@@ -7,7 +7,6 @@
 // What is a pointer? It's a reference to a value. In this example,
 // bar is a reference to the memory space that currently contains the
 // value 5.
-//
 // A cheatsheet given the above declarations:
 //
 //     u8         the type of a u8 value
@@ -30,7 +29,7 @@ pub fn main() void {
 
     // Please make num2 equal 5 using num1_pointer!
     // (See the "cheatsheet" above for ideas.)
-    num2 = ???;
+    num2 = num1_pointer.*;
 
     std.debug.print("num1: {}, num2: {}\n", .{ num1, num2 });
 }

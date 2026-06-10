@@ -43,6 +43,12 @@ pub fn main() void {
     // Feel free to run this program without adding Zump. What does
     // it do and why?
 
+    chars[1] = Character {
+        .health = 100,
+        .experience = 20,
+        .gold = 10,
+        .role = Role.bard,
+    };
     // Printing all RPG characters in a loop:
     for (chars, 0..) |c, num| {
         std.debug.print("Character {} - G:{} H:{} XP:{}\n", .{
